@@ -2,7 +2,7 @@ const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
 const scoreElement = document.getElementById('score');
 const highScoreElement = document.getElementById('high-score');
-const highScore = localStorage.getItem('highScore');
+const highScore = Number(localStorage.getItem('highScore')) ?? 0;
 highScoreElement.innerText = `ハイスコア: ${highScore}`;
 
 const TETROMINOS = {
