@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ブラウザテトリス</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-Hello YakuWorld
+    <canvas width="300" height="600" id="game"></canvas>
+    <div>スコア: <span id="score">0</span></div>
+    <div id="high-score">ハイスコア: 0</div>
+    <div>
+        <ul>
+            <li>左右キー: 左右移動</li>
+            <li>上キー: 回転</li>
+            <li>下キー: 落下</li>
+            <li>スペースキー: すばやく落下</li>
+        </ul>
+    </div>
+    <script src="tetris.js"></script>
 </body>
 </html>
